@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Rabb Photography | Wilson Creek, Pisgah National Forest</title>
+  <meta name="description" content="Nature, wildlife and outdoor portrait photography by John Rabb, from the Wilson Creek area of the Pisgah National Forest. New website coming soon.">
+  <meta property="og:title" content="John Rabb Photography">
+  <meta property="og:description" content="Snakes, underwater fish and outdoor portraits from the Wilson Creek area of the Pisgah National Forest. New website coming soon.">
+  <meta property="og:image" content="https://johnrabbphotography.com/ridgeline.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --text: #ece6da; --muted: #d9d2c4; --accent: #d48a3a; --bg: #0e110f; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: var(--bg) url(ridgeline.jpg) center / cover no-repeat fixed;
+      color: var(--text);
+      font-family: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .shade {
+      min-height: 100vh; min-height: 100svh;
+      display: flex; flex-direction: column;
+      background: linear-gradient(to top, rgba(14,17,15,.94) 0%, rgba(14,17,15,.45) 55%, rgba(14,17,15,.55) 100%);
+    }
+    header { padding: 26px 24px; max-width: 1240px; width: 100%; margin: 0 auto; }
+    .brand { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.55rem; letter-spacing: .04em; }
+    .brand small { display: block; font-family: "Work Sans", sans-serif; font-size: .62rem; letter-spacing: .32em; text-transform: uppercase; color: var(--muted); }
+    main { margin-top: auto; padding: 0 24px 12vh; max-width: 1240px; width: 100%; margin-left: auto; margin-right: auto; }
+    .eyebrow { font-size: .78rem; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); }
+    h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.05; margin: .3em 0 .35em; }
+    p { font-size: 1.15rem; line-height: 1.65; color: var(--muted); max-width: 38rem; margin: 0 0 1em; }
+    .soon { display: inline-block; margin-top: .6rem; padding: 12px 22px; border: 1px solid var(--accent); font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; }
+    footer { padding: 18px 24px 26px; max-width: 1240px; width: 100%; margin: 0 auto; font-size: .78rem; color: rgba(236,230,218,.55); }
+    @media (max-width: 600px) { body { background-attachment: scroll; } p { font-size: 1.05rem; } }
+  </style>
+</head>
+<body>
+  <div class="shade">
+    <header><div class="brand">John Rabb<small>Photography</small></div></header>
+    <main>
+      <span class="eyebrow">Wilson Creek &middot; Pisgah National Forest</span>
+      <h1>The wild side of<br>the Blue Ridge.</h1>
+      <p>Snakes in the leaf litter, trout in clear mountain water, and people at home in the outdoors. Photographed where the creek runs, by John Rabb.</p>
+      <p>A new website with John&rsquo;s gallery, prints to order and outdoor model sessions is on its way.</p>
+      <span class="soon">Coming soon</span>
+    </main>
+    <footer>&copy; <span id="y">2026</span> John Rabb Photography. All photographs are the property of John Rabb.</footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
